@@ -2,6 +2,9 @@
 
 A comparative study of three emotion recognition approaches: **LBP+KNN**, **HOG+SVM**, and **mini-Xception CNN**.
 
+##
+🎥 [Demo Video](https://www.youtube.com/watch?v=f6zI0opmQNE)
+
 ---
 
 ## 📊 Methodology Overview
