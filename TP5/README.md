@@ -46,23 +46,23 @@ Enumerate all possible policies.
 
 The Bellman optimality equation is:
 
-![Bellman Equation](https://latex.codecogs.com/png.image?\dpi{120}\bg{white}V^*(s)=R(s)+\max_a\gamma\sum_{s'}T(s,a,s')V^*(s'))
+$V^*(s) = R(s) + \max_a \gamma \sum_{s'} T(s,a,s') V^*(s')$
 
-**V*(s0):**
+**V\*(s0):**
 
-![V*(s0)](https://latex.codecogs.com/png.image?\dpi{120}\bg{white}V^*(s_0)=0+\gamma\max\{V^*(s_1),V^*(s_2)\})
+$V^*(s_0) = \gamma \max\{V^*(s_1), V^*(s_2)\}$
 
-**V*(s1):**
+**V\*(s1):**
 
-![V*(s1)](https://latex.codecogs.com/png.image?\dpi{120}\bg{white}V^*(s_1)=0+\gamma[(1-x)V^*(s_1)+xV^*(s_3)])
+$V^*(s_1) = \gamma [(1-x) V^*(s_1) + x V^*(s_3)]$
 
-**V*(s2):**
+**V\*(s2):**
 
-![V*(s2)](https://latex.codecogs.com/png.image?\dpi{120}\bg{white}V^*(s_2)=1+\gamma[yV^*(s_3)+(1-y)V^*(s_0)])
+$V^*(s_2) = 1 + \gamma [y V^*(s_3) + (1-y) V^*(s_0)]$
 
-**V*(s3):**
+**V\*(s3):**
 
-![V*(s3)](https://latex.codecogs.com/png.image?\dpi{120}\bg{white}V^*(s_3)=10+\gamma V^*(s_0))
+$V^*(s_3) = 10 + \gamma V^*(s_0)$
 
 ### Question 3: Optimal Policy for π*(s0) = a2
 
