@@ -33,6 +33,15 @@ To illustrate it, we'll be answering some questions based on this diagram of sta
 
 ### Question 1: Possible Policies
 
+Enumerate all possible policies.
+
+**Answer:** There are 2 possible policies since only S0 has multiple available actions (a1 or a2). All other states have only one action available (a0).
+
+| Policy | S0 | S1 | S2 | S3 |
+| --- | --- | --- | --- | --- |
+| $\pi_1$ | a1 | a0 | a0 | a0 |
+| $\pi_2$ | a2 | a0 | a0 | a0 |
+
 ### Question 2: Bellman Optimality Equations
 
 ### Question 3: Optimal Policy for π*(s0) = a2
