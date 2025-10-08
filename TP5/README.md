@@ -46,15 +46,15 @@ Enumerate all possible policies.
 
 The Bellman optimality equation is:
 
-$V^*(s) = R(s) + \max_a \gamma \sum_{s'} T(s,a,s') V^*(s')$
-
-$V^*(s_0) = \gamma \max\{V^*(s_1), V^*(s_2)\}$
-
-$V^*(s_1) = \gamma [(1-x) V^*(s_1) + x V^*(s_3)]$
-
-$V^*(s_2) = 1 + \gamma [y V^*(s_3) + (1-y) V^*(s_0)]$
-
-$V^*(s_3) = 10 + \gamma V^*(s_0)$
+```math
+\begin{aligned}
+V^*(s) &= R(s) + \max_a \gamma \sum_{s'} T(s,a,s') V^*(s') \\
+V^*(s_0) &= \gamma \max\{V^*(s_1), V^*(s_2)\} \\
+V^*(s_1) &= \gamma [(1-x) V^*(s_1) + x V^*(s_3)] \\
+V^*(s_2) &= 1 + \gamma [y V^*(s_3) + (1-y) V^*(s_0)] \\
+V^*(s_3) &= 10 + \gamma V^*(s_0)
+\end{aligned}
+```
 
 ### Question 3: Optimal Policy for π*(s0) = a2
 
