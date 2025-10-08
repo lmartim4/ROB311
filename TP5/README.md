@@ -56,7 +56,12 @@ V^*(s_3) &= 10 + \gamma V^*(s_0)
 \end{aligned}
 ```
 
-### Question 3: Optimal Policy for π*(s0) = a2
+### Question 3: Optimal Policy for π*($S_0$) = $a_2$
+
+Is there a value for x such that for all $\gamma$ ∈ [0,1) and y ∈ [0,1], $\pi$*($S_0$) = $a_2$?
+
+When x = 0, state $S_1$ becomes a trap that gives no reward and never reaches the high-reward state $S_3$ (it always loops back to itself). Meanwhile, $S_2$ always gives an immediate reward of 1 and has potential to reach $S_3$. Therefore, V*($S_2$) > V*($S_1$) for all $\gamma$ and y, making $\pi$*($S_0$) = $a_2$ optimal.
+
 
 ### Question 4: Optimal Policy for π*(s0) = a1
 
