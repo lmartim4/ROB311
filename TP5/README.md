@@ -60,9 +60,13 @@ V^*(s_3) &= 10 + \gamma V^*(s_0)
 
 Is there a value for x such that for all $\gamma$ ∈ [0,1) and y ∈ [0,1], $\pi$*($S_0$) = $a_2$?
 
-When x = 0, state $S_1$ becomes a trap that gives no reward and never reaches the high-reward state $S_3$ (it always loops back to itself). Meanwhile, $S_2$ always gives an immediate reward of 1 and has potential to reach $S_3$. Therefore, V*($S_2$) > V*($S_1$) for all $\gamma$ and y, making $\pi$*($S_0$) = $a_2$ optimal.
+When x = 0, state $S_1$ becomes a trap that gives no reward and never reaches a rewarding state $S_3$. In the other hand, $S_2$ gives someand leaves open the opportunity to reach $S_3$ which has the greates reward. 
 
+Due to this, V*($S_2$) > V*($S_1$) for all $\gamma$ and y, making $\pi$*($S_0$) = $a_2$ optimal.
 
-### Question 4: Optimal Policy for π*(s0) = a1
+### Question 4: Optimal Policy for π*($S_0$) = $a_1$
+Is there a value for y such that for all x > 0 and $\gamma$ ∈ [0,1], $\pi$*($S_0$) = $a_1$?
+
+When y = 0, $a_2$ from $S_0$ leads to $S_2$, which then cycles back to $S_0$ with only a reward of 1, never reaching the state $S_3$ that would give a greater reward. Meanwhile, taking action $a_1$ leads to $S_1$, which (for any x > 0) has a positive probability of reaching $S_3$ with reward 10, making $\pi$*($S_0$) = $a_1$ optimal.
 
 ### Question 5: Value Iteration Implementation
